@@ -1,0 +1,38 @@
+.box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: lightblue;
+  animation: move infinite 6s linear 0.5s;
+}
+
+
+@keyframes move {
+  from {
+    width: 100px;
+    height: 100px;
+  }
+
+  25% {
+    width: 150px;
+    height: 150px;
+    transform: translate( 1000px, 0)
+  }
+
+  50% {
+    width: 200px;
+    height: 200px;
+    transform: translate( 1000px, 400px)
+  }
+
+  75% {
+    width: 150px;
+    height: 150px;
+    transform: translate( 0, 400px)
+  }
+
+  to {
+    width: 100px;
+    height: 100px;
+  }
+}
